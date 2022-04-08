@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: #017e7e;
+    color: white;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bolder;
+    position: fixed;
+    width: 100%;
+}
+#login{
+    padding: 10px;
+    border: 2px  solid white ;
+    border-radius: 20px ;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav a:hover{
+    color: rgba(239, 243, 7, 0.801);
+}
