@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Roboto,Helvetica Neue,sans-serif;
 }
 nav{
     background-color: #017e7e;
@@ -9,10 +10,13 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: bolder;
     position: fixed;
     width: 100%;
+}
+#fake-nav{
+    height: 60px;
 }
 #login{
     padding: 10px;
@@ -25,4 +29,21 @@ nav a{
 }
 nav a:hover{
     color: rgba(239, 243, 7, 0.801);
+}
+.banner {
+    display: none;
+    height: 550px;
+    width: 100%;
+}
+#banner-1{
+    display: block;
+}
+.banner img{
+    width: 100%;
+    height: inherit;
+}
+#change-banner{
+    position: fixed;
+    top: 84%;
+    left: 90%;
 }
