@@ -2,31 +2,73 @@
     <head>
         <title>CoWIN</title>
         <link rel="stylesheet" href="./styles.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+        </style>
+        <script src="https://kit.fontawesome.com/a50b36bb17.js" crossorigin="anonymous"></script>
     </head>
     <body>
+        <div id = 'fake-header'>
+        </div>
+        <header>
+                <div id = 'indian-govt-logo'>
+                    <img src="./indian_govt.png" alt="">
+                </div>
+                <span class = 'ministry-of-health'>
+                    Ministry of Health and Family Welfare
+                </span>
+        </header>
         <nav>
             <span id = 'Cowin_Logo'><img src="./Screenshot from 2022-04-08 19-39-48.png" alt="COWIN"></span>
-            <span id = 'Health_ID'> <a href="">ABHA (Health_ID)</a></span>
-            <span id = 'Dashboard'><a href="">DASHBOARD</a></span>
-            <span id="Certificate_Verification"><a href="">VERIFY CERTIFICATE</a></span>
-            <span id="Faq"><a href="">FAQ</a></span>
-            <span id="Partners"><a href="">PARTNERS</a></span>
-            <span id = 'Login'><a href="">SIGNUP / SIGNIN</a></span>
+            <div class = 'left-nav'>
+                <span id = 'Health_ID'> <a href="">ABHA (Health_ID)</a></span>
+                <span id = 'Dashboard'><a href="">DASHBOARD</a></span>
+                <span id="Certificate_Verification"><a href="">VERIFY CERTIFICATE</a></span>
+                <span id="Faq"><a href="">FAQ</a></span>
+                <span id="Partners"><a href="">PARTNERS</a></span>
+                <span id = 'Login'><a href="">REGISTER / SIGNIN</a></span>
+            </div>  
         </nav>
-        <div id = 'fake-nav'></div>
+    <div id = 'fake-nav'></div>
         <section id  = 'front-banner'>
-            <button id = 'change-banner'>CHANGE</button>
+            <div id = 'change-banner'> 
+                <span id = 'backward-icon'><a href="#"><i class="fa-solid fa-arrow-left-long"></i></a></span>
+                <span id = 'numerator'>1</span>/3
+                <span id = 'forward-icon'><a href="#"><i class="fa-solid fa-arrow-right-long"></i></a></span>
+            </div>
             <div class = 'banner' id = 'banner-1'>
-                <img src="./poster_1.png" alt="Narendra Mddi">
+                <div class = 'text-for-banner-1'>
+                    <div id = 'heading_1'>
+                        <h1>"India is set to defeat Covid-19.
+                            Every Indian is making it possible."
+                        </h1>
+                    </div>                    
+                    <div class = 'abbrv'>
+                        <p> - PM Narendra Modi</p>
+                    </div>
+                </div>  
+                <img src="./poster_1.jpg" alt="Narendra Mddi">
             </div>
             <div class = 'banner' id = 'banner-2'>
-                <img src="./poster_2.png" alt="">
+                <img src="./poster_2.jpg" alt="">
+            </div>  
+            <div class = 'banner' id = 'banner-3'>
+                <img src="./poster_3.jpg" alt="">
             </div>
-            <!-- <div class = 'banner' id = 'banner-3'>
-                <img src="./poster_2.png" alt="">
-            </div> -->
         </section>
         <script src = './banner_script.js'></script>
-
+        <section id = 'vaccination_center'>
+            <h1>Search Your Nearest Vaccination Center</h1>
+            <p>Get a preview list of the nearest centers and check availability of vaccination slots </p>
+            <span id="subtext">
+                <a href="">Login to book your slot</a>
+            </span>
+            <div id="state-district">
+                <select class="states-menu" id = 'state-menu' placeholder = 'Select Select'>
+                </select>
+                <select name="" id="district-menu" placeholder = 'Select District'></select>
+            </div>
+        </section>
+        <script src="./state_district.js"></script>
     </body>
 </html> 
