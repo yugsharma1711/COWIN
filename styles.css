@@ -160,13 +160,13 @@ nav a:hover{
     margin-bottom: 10px;
 }
 .state{
-    width: 350px;
+    width: 30%;
 }
 .states-menu{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 70%;
     overflow-y: scroll;
     max-height: 250px;
     width: calc(100% + 10px);
@@ -197,4 +197,16 @@ nav a:hover{
     text-align: left;
     padding-left: 25px;
     font-size: 1em;
+}
+#state-district{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    min-height: 10px;
+    /* border: 1px solid red; */
+}
+.district{
+    margin-left: 25px;
+    width: 30%;
 }
