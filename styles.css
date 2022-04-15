@@ -17,6 +17,7 @@ header{
     color: white;
     height: 60px;
     font-size: 12px;
+    z-index: 4;
 }
 .ministry-of-health{
     width: 150px;
@@ -43,6 +44,7 @@ nav{
     font-weight: bold ;
     position: fixed;
     width: 100%;
+    z-index: 4;
 }
 #Health_ID{
     margin-right: 50px;
@@ -107,7 +109,8 @@ nav a:hover{
     position: absolute;
     top: 89%;
     left: 40%;
-    font-size : 22px;   
+    font-size : 22px;  
+    z-index: 0; 
 }
 #numerator{
     font-size: 25px;
@@ -120,6 +123,7 @@ nav a:hover{
     width: 50%;
     left: 4%;
     font-size: 22px;
+    z-index: 0;
 }
 
 .text-for-banner-1 #heading_1{
@@ -139,28 +143,37 @@ nav a:hover{
     justify-content: center;
     align-items: center;
     padding: 50px;
+    width: 100%;
 }
 #vaccination_center h1{
     color: #015353;
     font-size: 35px;
     margin-bottom: 18px;
+    margin-right: 30px;
 }
 #vaccination_center p{
     font-size: 21px;
     margin-bottom: 10px;
+    margin-right: 30px;
+
 }
 #vaccination_center #subtext a{
     color: #017e7e;
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;  
+    margin-right: 30px;
+
 
 }
 #vaccination_center #subtext{
     margin-bottom: 10px;
+    margin-right: 30px;
+
 }
 .state{
     width: 30%;
+    margin-left: 50px;
 }
 .states-menu{
     display: flex;
@@ -171,6 +184,7 @@ nav a:hover{
     max-height: 250px;
     width: calc(100% + 10px);
     display: none;
+    margin-left: 20px;
 }
 .states-menu input{
     display: none;
@@ -197,6 +211,7 @@ nav a:hover{
     text-align: left;
     padding-left: 25px;
     font-size: 1em;
+    margin-left: 45px;
 }
 #state-district{
     display: flex;
@@ -204,9 +219,27 @@ nav a:hover{
     justify-content: center;
     width: 100%;
     min-height: 10px;
+    margin-top: 10px;
     /* border: 1px solid red; */
 }
 .district{
-    margin-left: 25px;
+    margin-left: 20px;
     width: 30%;
+}
+.search{
+    width: 30%;
+}
+.search button{
+    width: 30%;
+    /* margin-left: 25px; */
+    border: none;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #015353;
+    color: white;
+    margin-left: 70px;
+}
+.vaccine-table, th, td, tr{
+    border: 1px solid black;
+    border-collapse: collapse;
 }
